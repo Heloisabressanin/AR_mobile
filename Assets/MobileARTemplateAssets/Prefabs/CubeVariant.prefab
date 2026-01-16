@@ -20,9 +20,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 613292779795284151, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 776242965031131868, guid: ebd7292e888c84f05924605e51048072, type: 3}
       propertyPath: m_Convex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652468872093772896, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317233515023633908, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435864238947048048, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3471538223933167219, guid: ebd7292e888c84f05924605e51048072, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -68,6 +84,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4719697340578916628, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719697340578916628, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098610303329052743, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024931360595809623, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7357653953804275573, guid: ebd7292e888c84f05924605e51048072, type: 3}
       propertyPath: m_MinScale
       value: 0.3
@@ -75,5 +107,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 613292779795284151, guid: ebd7292e888c84f05924605e51048072, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8728678524471231240}
   m_SourcePrefab: {fileID: 100100000, guid: ebd7292e888c84f05924605e51048072, type: 3}
+--- !u!54 &3839524402444493681 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4719697340578916628, guid: ebd7292e888c84f05924605e51048072, type: 3}
+  m_PrefabInstance: {fileID: 8374162720834587237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8986328500875594450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 613292779795284151, guid: ebd7292e888c84f05924605e51048072, type: 3}
+  m_PrefabInstance: {fileID: 8374162720834587237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8728678524471231240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986328500875594450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbaebe740069de438f32902e445d1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectVivant
+  configuration: {fileID: 11400000, guid: 46810fc1c31ce654380dd1345e2ac879, type: 2}
+  meshRenderer: {fileID: 0}
+  rb: {fileID: 3839524402444493681}
+  layerSol:
+    serializedVersion: 2
+    m_Bits: 1
+  layerVivant:
+    serializedVersion: 2
+    m_Bits: 64
